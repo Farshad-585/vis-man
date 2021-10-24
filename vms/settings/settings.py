@@ -5,7 +5,7 @@ import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 ALLOWED_HOSTS = ['uwavms.herokuapp.com']
 
 INSTALLED_APPS = [
