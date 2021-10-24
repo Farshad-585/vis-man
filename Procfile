@@ -1,0 +1,1 @@
+web: gunicorn vms.vms.wsgi
